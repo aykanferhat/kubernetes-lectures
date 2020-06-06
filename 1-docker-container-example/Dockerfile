@@ -12,12 +12,12 @@ CMD ["java", "-jar", "/app/myapp.jar"]
 # docker build --tag docker-container-example:1.0 .
 # docker images
 # docker container ls
-# docker run first-docker-container-example:1.0
-# docker run -d first-docker-container-example:1.0
+# docker run docker-container-example:1.0
+# docker run -d docker-container-example:1.0
 # docker stop {containerId}
-# docker run -d -p 9090:8080 first-docker-container-example:1.0
+# docker run -d -p 9090:8080 docker-container-example:1.0
        ### OR ##
-       #docker run -d --publish=9090:8080 first-docker-container-example:1.0
+       #docker run -d --publish=9090:8080 docker-container-example:1.0
 
 # docker exec -it {containerId} bash
 # curl localhost:8080
